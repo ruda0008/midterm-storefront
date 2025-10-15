@@ -6,7 +6,7 @@
       <p class="tagline">Meals for Pets, Lessons for Students!</p>
     </header>
 
-    <!-- Animal images in the header -->
+    <!-- Animal images in the header  -->
     <div class="animal-images">
       <img src="pictures/dog.jpg" alt="Dog" />
       <img src="pictures/cat.jpg" alt="Cat" />
