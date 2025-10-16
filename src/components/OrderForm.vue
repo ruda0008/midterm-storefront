@@ -71,7 +71,7 @@ export default {
   methods: {
     async fetchProducts() {
       try {
-        const response = await fetch('https://product-service.fake.net/');
+        const response = await fetch(`${process.env.VUE_APP_PRODUCT_SERVICE_URL}/products`);
         if (response.ok) {
           this.products = await response.json();
         } else {
@@ -89,7 +89,7 @@ export default {
       }
 
       try {
-        const response = await fetch('https://order-service.fake.net/', {
+        const response = await fetch(`${process.env.VUE_APP_ORDER_SERVICE_URL}/orders`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
